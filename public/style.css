@@ -25,8 +25,7 @@ html {
   opacity: .08;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 50%;
-  transform: translate(-50%, 0);
+  top: 190px;
 }
 
 .buddhas-glove {
@@ -87,6 +86,14 @@ hr {
 .section-label {
     font-size: 16px;
     margin-bottom: 5px;
+}
+
+.share-button {
+    background: url("/src/assets/share-icon.png");
+    width: 60px;
+  height: 60px;
+  background-size: 36px 42px;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 600px) {

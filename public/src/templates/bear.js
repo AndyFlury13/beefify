@@ -36,7 +36,6 @@ function getTodayDate() {
 }
 
 function renderFooter(totalDuration) {
-    console.log(totalDuration);
     $('#menu-footer').html(`Prix Fixe ${totalDuration}<br>Service Included`);
 }
 
@@ -71,7 +70,7 @@ function renderMenu(trackData) {
         randomMediumTermSongs[2].duration_ms +
         randomLongTermSongs[0].duration_ms +
         randomRecommendedSongs[0].duration_ms;
-    const totalDuration = convertMsToDuration(totalDurationInMs, false);
+    const totalDuration = convertMsToDuration(totalDurationInMs, true);
     renderFooter(totalDuration);
 }
 
