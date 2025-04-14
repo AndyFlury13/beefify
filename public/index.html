@@ -29,6 +29,7 @@
   <script type="module" src="src/spotify/auth.js"></script>
   <script type="module" src="src/spotify/api.js"></script>
   <script type="module" src="src/app.js"></script>
+  <script type="module" src="src/templates/buttons.js"></script>
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,21 +90,21 @@
 
 <body>
   <div class="buddhas-palm">
-    <div class="buddhas-glove">
       <div id="bear">
-        <div id="restaurant-name">ELEVEN MADISONG PARK</div>
-        <div id="date-sub-header"></div>
-        <div id="menu-body"></div>
-        <div id="menu-footer"></div>
-        <img class="eigth-note" src="/src/assets/eigth_note.png"></div>
+          <div id="bear-glove">
+          <div id="restaurant-name">ELEVEN MADISONG PARK</div>
+          <div id="date-sub-header"></div>
+          <div id="menu-body"></div>
+          <div id="menu-footer"></div>
+          <img class="eigth-note" src="/src/assets/eigth_note.png">
+        </div>
       </div>
       <div class="buttons">
         <div class="share">
-          <button class="share-button"/>
+          <button id="share-button"></button>
         </div>
         <div class="download-button"></div>
       </div>
-    </div>
   </div>
   <script>
     document.addEventListener('DOMContentLoaded', function () {

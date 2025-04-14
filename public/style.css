@@ -14,7 +14,19 @@ html {
     width: 370px;
     height: auto;
     margin: auto;
+}
+
+#bear {
     background-image: url("src/assets/smarmy_background.png");
+
+}
+
+#bear-glove {
+    background-color: rgba(255, 255, 237, .8);
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+
 }
 
 .eigth-note {
@@ -25,13 +37,7 @@ html {
   opacity: .08;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 190px;
-}
-
-.buddhas-glove {
-    background-color: rgba(255, 255, 237, .8);
-    padding-top: 20px;
-    padding-bottom: 10px;
+  top: 170px;
 }
 
 #restaurant-name {
@@ -55,10 +61,6 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-}
-
-.menu-item-value {
-    font-style: oblique;
 }
 
 #date-sub-header {
@@ -88,7 +90,7 @@ hr {
     margin-bottom: 5px;
 }
 
-.share-button {
+#share-button {
     background: url("/src/assets/share-icon.png");
     width: 60px;
   height: 60px;

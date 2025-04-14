@@ -89,7 +89,7 @@ function createMenuItem(songData) {
     return `
         <div class="menu-item">
             <div class="menu-item-title">${songData.title}</div>
-            <div class="menu-item-value">${songData.artist} - ${durationString}</div>
+            <div class="menu-item-value"><i>${songData.artist} - ${durationString}</i></div>
         </div>
     `;
 }
