@@ -63,6 +63,10 @@ html {
     margin-bottom: 10px;
 }
 
+.menu-item {
+    font-weight: lighter;
+}
+
 #date-sub-header {
     text-align: center;
     width: 300px;
@@ -81,8 +85,10 @@ html {
 
 
 hr {
-    width: 300px;
-    margin: 0px auto 20px auto
+    width: 250px;
+    margin: 0px auto 20px auto;
+    border: none;
+    background-color: #000;
 }
 
 .section-label {

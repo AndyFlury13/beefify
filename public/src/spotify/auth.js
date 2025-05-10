@@ -53,6 +53,10 @@ if (code) {
     window.history.replaceState({}, document.title, updatedUrl);
 }
 
+if (new Date(currentToken.expires) < new Date() || !currentToken.access_token) {
+    redirectToSpotifyAuthorize();
+}
+
 // If we have a token, we're logged in, so fetch user data and render logged in template
 if (currentToken.access_token) {
     const mediumTracks = await getTopTracks("medium_term");
@@ -71,11 +75,6 @@ if (currentToken.access_token) {
         recommendedSongs: recommendedSongs
     };
     renderBear(songData);
-}
-
-// Otherwise we're not logged in, so render the login template
-if (!currentToken.access_token) {
-    redirectToSpotifyAuthorize();
 }
 
 async function redirectToSpotifyAuthorize() {

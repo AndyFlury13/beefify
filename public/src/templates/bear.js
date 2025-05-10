@@ -49,18 +49,18 @@ function renderMenu(trackData) {
     const randomShortTermSongs = getNRandomItems(trackData.shortTermSongs, 1, songsToSkip); // appetizer
     songsToSkip = songsToSkip.concat(randomShortTermSongs);
     const randomRecommendedSongs = getNRandomItems(trackData.recommendedSongs, 1, songsToSkip)
-    $('#menu-body').append("<div class='section-label'><b>Starter</b></div>");
+    $('#menu-body').append("<div class='section-label'><b>STARTER</b></div>");
     $('#menu-body').append(createMenuItem(randomShortTermSongs[0]));
     $('#menu-body').append("<hr>");
-    $('#menu-body').append("<div class='section-label'><b>Main courses</b></div>");
+    $('#menu-body').append("<div class='section-label'><b>MAIN COURSES</b></div>");
     $('#menu-body').append(createMenuItem(randomMediumTermSongs[0]));
     $('#menu-body').append(createMenuItem(randomMediumTermSongs[1]));
     $('#menu-body').append(createMenuItem(randomMediumTermSongs[2]));
     $('#menu-body').append("<hr>");
-    $('#menu-body').append("<div class='section-label'><b>Dessert</b></div>");
+    $('#menu-body').append("<div class='section-label'><b>DESSERT</b></div>");
     $('#menu-body').append(createMenuItem(randomLongTermSongs[0]));
     $('#menu-body').append("<hr>");
-    $('#menu-body').append("<div class='section-label'><b>Chef's choice</b></div>");
+    $('#menu-body').append("<div class='section-label'><b>CHEF'S CHOICE</b></div>");
     $('#menu-body').append(createMenuItem(randomRecommendedSongs[0]));
     $('#menu-body').append("<hr>");
     console.log(randomShortTermSongs[0]);
